@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Create and share playlists and image collections with Stack Hub">
+    <title>Stack Hub | Your Digital Collections</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Favicon (replace with your actual favicon) -->
+    <link rel="icon" href="images/favicon.png" type="image/png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <header class="header">
+        <nav class="navbar" id="navbar">
+            <div class="nav-brand">
+                <a href="#home" class="logo-link">
+                    <p>Stack Hub</p>
+                </a>
+            </div>
+
+            <div class="nav-menu-container">
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#collection" class="nav-link">Collections</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+
+                <div class="nav-actions">
+                    <div class="search-container">
+                        <form class="search-form">
+                            <input type="search" placeholder="Search collections..." class="search-input">
+                            <button type="submit" class="search-btn" aria-label="Search">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </form>
+                    </div>
+
+                    <div class="action-buttons">
+                        <button class="btn btn-outline btn-login">
+                            <i class="fas fa-lock"></i> Login
+                        </button>
+                        <button class="btn btn-primary btn-signup">
+                            <i class="fas fa-user-plus"></i> Sign Up
+                        </button>
+                        <button class="theme-toggle" aria-label="Toggle dark mode">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <button class="mobile-menu-btn" aria-label="Toggle menu" aria-expanded="false">
+                <span class="menu-icon"></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Organize Your Digital World</h1>
+                <p class="hero-subtitle">Create, manage and share your playlists and image collections in one beautiful
+                    platform</p>
+
+                <div class="hero-cta">
+                    <a href="#collection" class="btn btn-primary btn-large">
+                        <i class="fas fa-rocket"></i> Get Started
+                    </a>
+                    <a href="#about" class="btn btn-outline btn-large">
+                        <i class="fas fa-play-circle"></i> Watch Demo
+                    </a>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">10K+</span>
+                        <span class="stat-label">Collections</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">50K+</span>
+                        <span class="stat-label">Users</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">1M+</span>
+                        <span class="stat-label">Items</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <img src="images/hero.png" alt="Collection management interface" class="hero-img" loading="lazy"
+                    width="600" height="400">
+                <div class="hero-shapes">
+                    <div class="shape shape-1"></div>
+                    <div class="shape shape-2"></div>
+                    <div class="shape shape-3"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="section-header">
+            <h2 class="section-title">About Stack Hub</h2>
+            <p class="section-subtitle">Your ultimate content organization platform</p>
+        </div>
+
+        <div class="about-container">
+            <div class="about-card about-developer">
+                <div class="about-card-header">
+                    <h3 class="about-card-title">About Developer</h3>
+                </div>
+                <div class="about-card-body">
+                    <div class="developer-profile">
+                        <img src="images/shariq.png" alt="Shariq Shakeel" class="developer-img" width="150"
+                            height="150">
+                        <h4 class="developer-name">Shariq Shakeel</h4>
+                        <p class="developer-title">MERN Stack Developer</p>
+                    </div>
+
+                    <div class="developer-info">
+                        <div class="info-item">
+                            <i class="fas fa-university"></i>
+                            <span>Sir Syed University</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Karachi, Pakistan</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>studentshariq3478@gmail.com</span>
+                        </div>
+                    </div>
+
+                    <p class="developer-bio">
+                        Passionate web developer with expertise in creating modern, responsive web applications.
+                        Focused on delivering exceptional user experiences through clean code and intuitive design.
+                    </p>
+
+                    <div class="developer-skills">
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">CSS3</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-card about-platform">
+                <div class="about-card-header">
+                    <h3 class="about-card-title">About Platform</h3>
+                </div>
+                <div class="about-card-body">
+                    <p class="platform-description">
+                        Stack Hub revolutionizes how you organize digital content. Our platform provides powerful
+                        yet simple tools to manage your media collections with ease.
+                    </p>
+
+                    <div class="platform-features">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-music"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4 class="feature-title">Music Playlists</h4>
+                                <p class="feature-text">
+                                    Create unlimited playlists from your favorite songs and share them with friends.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-image"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4 class="feature-title">Image Collections</h4>
+                                <p class="feature-text">
+                                    Organize your photos into beautiful galleries with customizable layouts.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-share-alt"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4 class="feature-title">Easy Sharing</h4>
+                                <p class="feature-text">
+                                    Share your collections publicly or keep them private - you're in control.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="platform-cta">
+                        <button class="btn btn-primary">
+                            <i class="fas fa-book"></i> Read Documentation
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Collections Section -->
+    <section class="collections-section" id="collection">
+        <div class="section-header">
+            <h2 class="section-title">Your Collections</h2>
+            <p class="section-subtitle">Browse and manage your saved content</p>
+        </div>
+
+        <div class="collections-controls">
+            <div class="filter-controls">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="music">Music</button>
+                <button class="filter-btn" data-filter="images">Images</button>
+                <button class="filter-btn" data-filter="videos">Videos</button>
+                <button class="filter-btn" data-filter="documents">Documents</button>
+            </div>
+
+            <div class="sort-controls">
+                <div class="sort-select">
+                    <label for="sort-by">Sort by:</label>
+                    <select id="sort-by" class="sort-dropdown">
+                        <option value="recent">Recently Added</option>
+                        <option value="name">Name (A-Z)</option>
+                        <option value="oldest">Oldest First</option>
+                        <option value="size">Collection Size</option>
+                    </select>
+                </div>
+
+                <button class="btn btn-primary btn-new-collection">
+                    <i class="fas fa-plus"></i> New Collection
+                </button>
+            </div>
+        </div>
+
+        <div class="collections-grid">
+            <!-- Music Collection 1 -->
+            <div class="collection-card" data-category="music">
+                <div class="card-header">
+                    <div class="collection-badge music-badge">
+                        <i class="fas fa-music"></i> Music
+                    </div>
+                    <div class="collection-actions">
+                        <button class="action-btn" aria-label="Edit collection">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card-body">
+                    <h3 class="collection-title">Workout Mix 2023</h3>
+                    <p class="collection-description">
+                        High energy tracks to keep you motivated during training sessions.
+                    </p>
+                    <div class="collection-meta">
+                        <span class="meta-item">
+                            <i class="fas fa-file-audio"></i> 24 tracks
+                        </span>
+                        <span class="meta-item">
+                            <i class="fas fa-clock"></i> 1.8 hrs
+                        </span>
+                    </div>
+                </div>
+
+                <div class="card-footer">
+                    <button class="btn btn-outline btn-sm">
+                        <i class="fas fa-play"></i> Play All
+                    </button>
+                    <button class="btn btn-primary btn-sm">
+                        <i class="fas fa-share-alt"></i> Share
+                    </button>
+                </div>
+            </div>
+
+            <!-- Image Collection 1 -->
+            <div class="collection-card" data-category="images">
+                <div class="card-header">
+                    <div class="collection-badge image-badge">
+                        <i class="fas fa-image"></i> Images
+                    </div>
+                    <div class="collection-actions">
+                        <button class="action-btn" aria-label="Edit collection">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card-body">
+                    <div class="collection-preview">
+                        <div class="preview-grid">
+                            <div class="preview-item" style="background-image: url('images/1.jpg');"></div>
+                            <div class="preview-item" style="background-image: url('images/2.jpg');"></div>
+                            <div class="preview-item" style="background-image: url('images/3.jpg');"></div>
+                            <div class="preview-item more-items">+12</div>
+                        </div>
+                    </div>
+
+                    <h3 class="collection-title">Clothes</h3>
+                    <p class="collection-description">
+                        Memories from our family trip to Northern Areas.
+                    </p>
+                </div>
+
+                <div class="card-footer">
+                    <button class="btn btn-outline btn-sm">
+                        <i class="fas fa-eye"></i> View All
+                    </button>
+                    <button class="btn btn-primary btn-sm">
+                        <i class="fas fa-download"></i> Download
+                    </button>
+                </div>
+            </div>
+
+            <!-- Additional collection cards would go here -->
+        </div>
+
+        <div class="collections-footer">
+            <button class="btn btn-outline btn-load-more">
+                <i class="fas fa-redo"></i> Load More Collections
+            </button>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="section-header">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">We'd love to hear from you</p>
+        </div>
+
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3 class="contact-info-title">Contact Information</h3>
+
+                <div class="info-item">
+                    <div class="info-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="info-content">
+                        <h4 class="info-label">Email</h4>
+                        <a href="mailto:contact@stackhub.com" class="info-value">contact@stackhub.com</a>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <div class="info-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <div class="info-content">
+                        <h4 class="info-label">Phone</h4>
+                        <a href="tel:+923412345678" class="info-value">+92 341 2345678</a>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <div class="info-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="info-content">
+                        <h4 class="info-label">Address</h4>
+                        <address class="info-value">
+                            Scheme 33, Karachi<br>
+                            Sindh, Pakistan
+                        </address>
+                    </div>
+                </div>
+
+                <div class="social-links">
+                    <a href="#" class="social-link" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-link" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <form id="contactForm" class="form">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Full Name</label>
+                        <input type="text" id="name" name="name" class="form-input" placeholder="Enter your name"
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" id="email" name="email" class="form-input" placeholder="Enter your email"
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject" class="form-label">Subject</label>
+                        <input type="text" id="subject" name="subject" class="form-input"
+                            placeholder="What's this about?">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message" class="form-label">Your Message</label>
+                        <textarea id="message" name="message" class="form-textarea" rows="5"
+                            placeholder="Type your message here..." required></textarea>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Footer Top Section -->
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="#" class="footer-logo">
+                        <p>Stack Hub</p>
+                    </a>
+                    <p class="footer-description">
+                        The ultimate platform for organizing and sharing your digital collections.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <div class="links-column">
+                        <h3 class="links-title">Product</h3>
+                        <ul class="links-list">
+                            <li><a href="#">Features</a></li>
+                            <li><a href="#">Pricing</a></li>
+                            <li><a href="#">Updates</a></li>
+                            <li><a href="#">Roadmap</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="links-column">
+                        <h3 class="links-title">Company</h3>
+                        <ul class="links-list">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Press</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="links-column">
+                        <h3 class="links-title">Support</h3>
+                        <ul class="links-list">
+                            <li><a href="#">Help Center</a></li>
+                            <li><a href="#">Community</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">API Docs</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="links-column">
+                        <h3 class="links-title">Legal</h3>
+                        <ul class="links-list">
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Cookie Policy</a></li>
+                            <li><a href="#">GDPR</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom Section -->
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    &copy; 2023 Stack Hub. All rights reserved by Shariq Shakeel.
+                </div>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#home" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
